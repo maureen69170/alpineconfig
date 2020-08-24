@@ -1,0 +1,36 @@
+body{
+    /*height: 100%;*/
+    margin: 0;
+}
+
+header{
+    background-color: #797A7B;
+    margin: 0;
+    height: 50px;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/*img{
+    width: 200px;
+    height: 400px;
+}*/
+
+.carou_taille{
+    width: 700px;
+    height: 700px;
+    overflow: visible;
+}
+
+.carou_slide{
+    margin: 20px;
+}
+
+.btn_select:hover{
+    background-color: cornflowerblue;
+}
