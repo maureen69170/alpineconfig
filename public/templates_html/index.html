@@ -22,33 +22,91 @@
 </Header>
 
 <main>
-    <div id="carouselExampleIndicators" class="carousel slide carou_taille" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <button class="btn_select carousel-item active">
-                <img src="../templates_html/img/configurateur/modele/selection/legende.png"
-                     class="d-block w-100" alt="...">
-                <h4>Legende</h4>
-            </button>
-            <button class="btn_select carousel-item">
-                <img src="../templates_html/img/configurateur/modele/selection/pure.png"
-                     class="d-block w-100" alt="...">
-                <h4>Pure</h4>
-            </button>
-        </div>
-        <a class="carousel-control-prev carou_slide" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next carou_slide" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+    <div>
+                <input
+                        type="radio" name="emotion"
+                        id="legende" class="input-hidden" />
+                <label for="legende">
+                    <img
+                            src="../templates_html/img/configurateur/modele/selection/legende.png"
+                            alt="Alpine legende model" />
+                    <h4>Legende</h4>
+                    <p>58 400€</p>
+                </label>
+
+                <input
+                        type="radio" name="emotion"
+                        id="pure" class="input-hidden" />
+                <label for="pure">
+                    <img
+                            src="../templates_html/img/configurateur/modele/selection/pure.png"
+                            alt="Alpine pure model" />
+                    <h4>Pure</h4>
+                    <p>54 700€</p>
+                </label>
+
+
+
     </div>
+
+
+<!--part color choice-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <input
+                            type="radio" name="emotion"
+                            id="blanc" class="input-hidden colors" />
+                    <label for="blanc">
+                        <img
+                                src="../templates_html/img/configurateur/couleurs/selection/blanc.jpg"
+                                alt="couleur blanche" />
+                    </label>
+                    <div class="card-body">
+                        <h5 class="card-title">Blanc Glacier</h5>
+                        <p class="card-text">0€</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <input
+                            type="radio" name="emotion"
+                            id="bleu" class="input-hidden colors" />
+                    <label for="bleu">
+                        <img
+                                src="../templates_html/img/configurateur/couleurs/selection/bleu.jpg"
+                                alt="couleur bleu" />
+
+                    </label>
+                    <div class="card-body">
+                        <h5 class="card-title">Bleu Alpine</h5>
+                        <p class="card-text">1800€</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <input
+                            type="radio" name="emotion"
+                            id="noir" class="input-hidden colors" />
+                    <label for="noir">
+                        <img
+                                src="../templates_html/img/configurateur/couleurs/selection/noir.jpg"
+                                alt="noir" />
+                    </label>
+                    <div class="card-body">
+                        <h5 class="card-title">Noir Profond</h5>
+                        <p class="card-text">840€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 </body>
