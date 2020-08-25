@@ -10,7 +10,7 @@ header{
 
 }
 
-h1{
+h1.card_choice{
     color: white;
     text-align: center;
     margin: 0;
@@ -59,13 +59,13 @@ section{
 }
 
 
-.colors[type=radio]:checked + label>img {
+.colors[type='radio']:checked + label>img {
     border: 2px solid red;
     /*box-shadow: 0 0 3px 3px red;*/
     background-color: gray;
 }
 
-.colors[type=radio] + label>img {
+.colors[type='radio'] + label>img {
     /*border: 1px dashed #444;*/
     margin-top: 10px;
     width: 200px;
@@ -81,6 +81,39 @@ section{
     margin-left: 25%;
 }
 
+
+.color_carou{
+    margin-top: 25px;
+    padding: 25px;
+    display: none;
+    color: #fff;
+}
+.black{
+    background: black;
+    color: #fff;
+}
+.blanc{
+    background:white;
+    color: black;
+}
+.blue{
+    background: blue;
+}
+
+.color_carou2{
+    margin-top: 25px;
+    padding: 25px;
+    display: none;
+    color: #fff;
+}
+
+/*divider line css*/
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+h1.divider{
+    text-align: center;
+}
 
 
 
