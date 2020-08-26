@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="../templates_html/style.css">
 </head>
 <body>
-<Header>
+<Header id="start">
     <nav style="position: relative">
         <img src="../templates_html/img/sources-homepage/logo/logo-white.png" alt="">
     </nav>
-    <img src="../templates_html/img/sources-homepage/galerie/A110_LEGENDE_5.jpg" alt="" style="width: 100%;height: 1050px; margin-top: -150px">
+    <img src="../templates_html/img/sources-homepage/galerie/A110_LEGENDE_5.jpg" alt="" class="img_header">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="buttons">
                     <div class="container">
-                        <a href="#start" class="btn effect01" value="blanc" style="position: relative; top: -770px"><span>Start</span></a>
+                        <a href="#etape1" class="btn effect01" value="blanc" style="position: relative; top: -770px" id="start1"><span>Start</span></a>
                     </div>
                 </div>
             </div>
@@ -57,8 +57,8 @@
 
 <main class="container-fluid">
     <div class="row">
-        <div class="col-9">
-            <h3 class="divider" id="start">Etape 1: Modeles</h3>
+        <div class="col-9 test345">
+            <h3 class="divider" id="etape1">Etape 1: Modeles</h3>
             <hr class="solid">
             <!--container model choice-->
             <div class="container-fluid" style="height: 800px">
@@ -90,16 +90,16 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <a href="#test1" class="btn btn_next" value="blanc">Next</a>
+                        <a href="#test1" class="btn btn_next" value="blanc" >Next</a>
                     </div>
                 </div>
             </div>
             <!--fin container modele-->
 
             <!--container colors choice-->
-            <h3 class="divider" id="test1">Etape 2: Couleurs</h3>
+            <h3 class="divider" id="etape2">Etape 2: Couleurs</h3>
             <hr class="solid">
-            <section class="container-fluid">
+            <section class="container-fluid border_choices">
                 <div class="row">
                     <div class="col-4">
                         <div class="card" style="width: 18rem;">
@@ -241,15 +241,147 @@
                     <a href="#test2" class="btn btn_next" value="blanc">Next</a>
                 </div>
             </div>
-        </div>
-        <aside class="col-3" style="background-color: #282c34">
-            <div style="background-color: white; height: 300px; position: static">
+            <!--fin carou-->
 
+            <!--etape 3 jantes-->
+            <h3 class="divider2" id="etape3">Etape 3: Jantes & Roues</h3>
+            <hr class="solid">
+            <div class="container-fluid border_choices">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <input
+                                    type="radio" name="standard"
+                                    id="standard" class="input-hidden colors" value="standard"/>
+                            <label for="standard">
+                                <img
+                                        src="../templates_html/img/configurateur/jantes/selection/jante-standard.jpg"
+                                        alt="jantes standard" />
+                            </label>
+                            <div class="card-body">
+                                <h5 class="card-title">Jantes Fuchs 18" forgées</h5>
+                                <p class="card-text">1008€</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <input
+                                    type="radio" name="legendes"
+                                    id="legendes" class="input-hidden colors" value="legendes"/>
+                            <label for="legendes">
+                                <img
+                                        src="../templates_html/img/configurateur/jantes/selection/jante-legende.jpg"
+                                        alt="jantes legendes" />
+
+                            </label>
+                            <div class="card-body">
+                                <h5 class="card-title">Jantes Légendes 18"</h5>
+                                <p class="card-text">Inclus</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <input
+                                    type="radio" name="serac"
+                                    id="serac" class="input-hidden colors" value="serac" />
+                            <label for="serac">
+                                <img
+                                        src="../templates_html/img/configurateur/jantes/selection/jante-serac.jpg"
+                                        alt="jantes serac" />
+                            </label>
+                            <div class="card-body">
+                                <h5 class="card-title">Jantes Sérac 18"</h5>
+                                <p class="card-text">420€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#test2" class="btn btn_next" value="blanc">Next</a>
+                </div>
+            </div>
+        </div>
+
+        <aside class="col-3">
+            <div class="sidebar">
+                <ul class="aside_list">
+                    <li>
+                        <div class="slide-in from-right">
+                            <div class="slide-in-content">
+                                <a href="#start" class="btn btn_aside">0 -> Start</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slide-in from-right">
+                            <div class="slide-in-content">
+                                <a href="#etape1" class="btn btn_aside">1 -> Modeles</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slide-in from-right">
+                            <div class="slide-in-content">
+                                <a href="#etape2" class="btn btn_aside">2 -> Couleurs</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slide-in from-right">
+                            <div class="slide-in-content">
+                                <a href="#etape3" class="btn btn_aside">3 -> Jantes & Roues</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slide-in from-right">
+                            <div class="slide-in-content">
+                                <a href="#etape4" class="btn btn_aside">4 -> Sellerie</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slide-in from-right">
+                            <div class="slide-in-content">
+                                <a href="#etape5" class="btn btn_aside">5 -> Equipements</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slide-in from-right">
+                            <div class="slide-in-content">
+                                <a href="#etape6" class="btn btn_aside">6 -> Accessoires</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+                <!--<div class="slide-in from-right">
+                    <div class="slide-in-content">
+                        <ul>
+                            <li>Modeles</li>
+                        </ul>
+                    </div>
+                </div>-->
             </div>
 
         </aside>
     </div>
 </main>
+
 
 
 
@@ -276,6 +408,14 @@
         $('#blanc').prop('checked', false)
     })
 
+    $('#start1').click(function() {
+        $('.slide-in').toggleClass('show');
+    });
+
+    $('#next1').click(function() {
+        $('.slide-in').toggleClass('show');
+    });
+
     $(document).ready(function(){
         $('.colors[type="radio"]').click(function(){
             var val = $(this).attr("value");
@@ -283,6 +423,27 @@
             $(".msg").not(target).hide();
             $(target).show();
         });
+    });
+
+    $(function() {
+
+        var $sidebar   = $("#sidebar"),
+            $window    = $(window),
+            offset     = $sidebar.offset(),
+            topPadding = 15;
+
+        $window.scroll(function() {
+            if ($window.scrollTop() > offset.top) {
+                $sidebar.stop().animate({
+                    marginTop: $window.scrollTop() - offset.top + topPadding
+                });
+            } else {
+                $sidebar.stop().animate({
+                    marginTop: 0
+                });
+            }
+        });
+
     });
 </script>
 </body>

@@ -11,9 +11,15 @@ nav{
     height: 50px;
 }
 
+.img_header{
+    width: 100%;
+    height: 1150px;
+    margin-top: -150px;
+}
+
 .txt_header{
     position: relative;
-    top: -800px;
+    top: -900px;
     background: rgba(40,44,52, 0.5);
     border-radius: 10px;
 
@@ -34,6 +40,11 @@ p.txt{
 
 h2, p{
     text-align: center;
+}
+
+.buttons{
+    position: relative;
+    top: -100px;
 }
 
 .btn {
@@ -145,14 +156,16 @@ input[type=radio] + label {
 
 /*part section colors choice*/
 
-section{
-    border: 1px solid gray;
-
+.border_choices{
+    /*border: 1px solid gray;*/
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
 }
 
 
 .colors[type='radio']:checked + label>img {
-    border: 2px solid red;
+    border: 3px solid #0A57D7;
     /*box-shadow: 0 0 3px 3px red;*/
     background-color: gray;
 }
@@ -197,6 +210,11 @@ h3.divider{
     text-align: center;
 }
 
+h3.divider2{
+    margin-top: 150px;
+    text-align: center;
+}
+
 /*btn next part*/
 
 a.btn_next{
@@ -208,6 +226,91 @@ a.btn_next{
     color: white;
     line-height: 30px;
 }
+
+
+/*css aside*/
+
+aside{
+    padding-top: 100px;
+    background-color: #282c34;
+    /*height: 100%;*/
+}
+
+.test345,
+.sidebar {
+    /*border: 2px solid black;*/
+    padding: 15px;
+    background-color: #fff;
+}
+
+.test345 {
+    width: 60%;
+    height: 150vh;
+}
+
+.sidebar {
+    height: 68vh;
+    position: sticky;
+    top: 100px;
+    background-color: #0A57D7;
+    border-radius: 15px;
+
+}
+
+
+
+.slide-in {
+    z-index: 10; /* to position it in front of the other content */
+    position: absolute;
+    overflow: hidden; /* to prevent scrollbar appearing */
+    width: 300px;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+.slide-in.from-left {
+    left: 0;
+}
+
+.slide-in.from-right {
+    right: 0;
+}
+
+.slide-in-content {
+    padding: 5px 20px;
+    transition: transform .5s ease; /* our nice transition */
+}
+
+.slide-in.from-left .slide-in-content {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.slide-in.from-right .slide-in-content {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.slide-in.show .slide-in-content {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.aside_list{
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+li{
+    height: 5em;
+}
+
+.btn_aside{
+    background-color: white;
+    color: #0A57D7;
+
+}
+/*fin aside*/
 
 
 
