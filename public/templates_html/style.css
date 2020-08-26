@@ -163,6 +163,15 @@ input[type=radio] + label {
     border-left: 3px solid gray;
 }
 
+.border_choices2{
+    position: relative;
+    top: -310px;
+    /*border: 1px solid gray;*/
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+}
+
 
 .colors[type='radio']:checked + label>img {
     border: 3px solid #0A57D7;
@@ -311,6 +320,14 @@ li{
 
 }
 /*fin aside*/
+
+
+/*part sellerie*/
+.img_sellerie{
+    width: 100%;
+}
+
+/*fin sellerie*/
 
 
 
